@@ -8,6 +8,5 @@ class User < ActiveRecord::Base
 
   def hosts
     trips.map(&:listing).map(&:host)
-    binding.pry
   end
 end
